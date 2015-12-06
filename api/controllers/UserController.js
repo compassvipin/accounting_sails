@@ -7,7 +7,7 @@
 //TRUNCATE `user`;
 
 module.exports = {
-    create: function (req, res) {
+        create: function (req, res) {
         User.findOne({where: {email: req.param('email')}}).then(function (checkUserExist) {
             if (checkUserExist) {
                 return res.ok({
@@ -31,7 +31,8 @@ module.exports = {
     login:function (req ,res) {
         console.log('here');
     }
-
+    
+    
 
 
 };

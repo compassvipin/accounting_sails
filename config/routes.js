@@ -41,7 +41,8 @@ module.exports.routes = {
  'POST /createPurchase': { controller: 'purchase', action: 'create' },
  'POST /createSales': { controller: 'Sale', action: 'create' },
  'POST /createItem': { controller: 'Item', action: 'create' },
- 'GET /userLogin': { controller: 'User', action: 'login' }
+ 'GET /userLogin': { controller: 'User', action: 'login' },
+ 'GET /getDashBoardData': { controller: 'Dashboard', action: 'getDashBoard' }
 
   /***************************************************************************
   *                                                                          *
